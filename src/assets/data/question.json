@@ -1,0 +1,20 @@
+{
+    "0": {
+        "cover_url": "http://localhost:3000/static/media/teste.2f08aa8a.jpg",
+        "correct_answer": "A",
+        "alternatives": [{"letter": "A", "title": "Bright Green Field - Squid"},
+            {"letter": "B", "title": "Songs of Praise - Shame"},
+            {"letter": "C", "title": "Mothership- Dance Gavin Dance"},
+            {"letter": "D", "title": "Led Zeppelin IV - Led Zeppelin"}
+        ]
+    },
+    "1": {
+        "cover_url": "https://lastfm.freetls.fastly.net/i/u/770x0/74b4dfe742ab6c1c3c2f6cb756c11b1c.webp#74b4dfe742ab6c1c3c2f6cb756c11b1c",
+        "correct_answer": "B",
+        "alternatives": [{"letter": "A", "title": "Bright Green Field - Squid"},
+            {"letter": "B", "title": "Deep Down Happy - Sports Team"},
+            {"letter": "C", "title": "Mothership- Dance Gavin Dance"},
+            {"letter": "D", "title": "Led Zeppelin IV - Led Zeppelin"}
+        ]
+    }
+}
