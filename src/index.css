@@ -38,7 +38,8 @@ main{
   flex-direction: column;
 }
 
-.game-box{
+.game-box,
+.final-box{
 
   margin-top: auto;
   background-color: var(--fg-color);
@@ -49,6 +50,64 @@ main{
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+}
+
+.final-box{
+
+  height: 400px;
+  width: 20%;
+}
+
+.results{
+
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: #fff;
+  font-family: var(--sans-font);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#guess{
+
+  font-size: 36px;
+  font-weight: 600;
+}
+
+#result-points{
+
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.final-buttons{
+
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+}
+
+.final-buttons button{
+
+  cursor: pointer;
+  font-family: var(--sans-font);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.final-buttons svg{
+
+  margin-right: 5px;
 }
 
 .logo{
@@ -122,9 +181,18 @@ main{
   border: none;
   border-radius: 10px;
   background-color: var(--bg-color);
-  font-size: 24px;
+  font-size: 18px;
   color: #fff;
   margin-bottom: 10px;
+}
+
+.tooltip{
+
+  font-family: var(--sans-font) !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  border-radius: 10px !important;
+  opacity: 1 !important;
 }
 
 .lg-btn svg{
@@ -145,4 +213,20 @@ footer a{
   text-decoration: none;
   color: var(--footer-color);
   font-weight: 700;
+}
+
+#correct{
+
+  background-color: rgb(80, 235, 151);
+}
+
+#wrong{
+
+  background-color: rgb(230, 74, 74);
+}
+
+#correct label, 
+#wrong label{
+
+  color: #353941;
 }
