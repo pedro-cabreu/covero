@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Footer from '../../components/Footer';
 import Logo from '../../assets/img/COVERO.svg'; 
@@ -21,6 +21,12 @@ export default function Home(){
         setPlayer(playerQtd);
         setPage(Page + 1);
     }
+
+    useEffect(() => {
+        
+        ReactTooltip.rebuild();
+
+    }, [Page]);
 
     function selectType(type){
         
@@ -53,6 +59,7 @@ export default function Home(){
                 </main> );
         
         case 2:
+
             return(
                 <main>
                     <div className="start-box" initial={{ x: -200 }} animate={{ x: 0 }}>
@@ -110,7 +117,7 @@ export default function Home(){
                         <div className="start-buttons">
                             <motion.button data-tip data-for='mucore' className="lg-btn" onClick={() => selectType('mucore')} whileTap={{ scale: 0.9 }} whileHover={{scale: 1.01, border: '2px #5F85DB solid'}} transition={{duration: 0.2}} ><GiChessKing size={28}/> /mu/ core</motion.button>
                             <motion.button data-tip data-for='rock' className="lg-btn" onClick={() => selectType('rock')} whileTap={{ scale: 0.9 }} whileHover={{scale: 1.01, border: '2px #5F85DB solid'}} transition={{duration: 0.2}} ><GiGuitar size={28}/> Rock and Metal</motion.button>
-                            <motion.button data-tip data-for='hiphop' className="lg-btn" onClick={() => selectType('hiphop')} whileTap={{ scale: 0.9 }} whileHover={{scale: 1.01, border: '2px #5F85DB solid'}} transition={{duration: 0.2}} ><GiGemChain size={28}/> HipHop and Trap</motion.button>
+                            <motion.button data-tip data-for='hiphop' className="lg-btn" onClick={() => selectType('rap')} whileTap={{ scale: 0.9 }} whileHover={{scale: 1.01, border: '2px #5F85DB solid'}} transition={{duration: 0.2}} ><GiGemChain size={28}/> HipHop and Trap</motion.button>
                             <motion.button data-tip data-for='random' className="lg-btn" onClick={() => selectType('random')} whileTap={{ scale: 0.9 }} whileHover={{scale: 1.01, border: '2px #5F85DB solid'}} transition={{duration: 0.2}} ><GiPerspectiveDiceSixFacesFive size={28}/> Random</motion.button>
                         </div>
                     </div>
