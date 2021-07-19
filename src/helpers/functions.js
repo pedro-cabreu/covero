@@ -1,6 +1,7 @@
 import MuCoreDataSet from '../assets/data/mucore.json';
 import RockMetalDataSet from '../assets/data/rock_metal.json';
 import RapDataSet from '../assets/data/rap.json';
+import RandomDataSet from '../assets/data/1000random.json';
 
 export function setDataSet(type){
 
@@ -14,6 +15,9 @@ export function setDataSet(type){
 
         case 'rap':
             return RapDataSet;
+
+        case 'random':
+            return RandomDataSet;
 
         default:
             return MuCoreDataSet;
@@ -46,6 +50,9 @@ export function setArrayMaxSize(type){
 
         case 'rap':
             return 448;
+
+        case 'random':
+            return 909;
 
         default:
             return 100;
